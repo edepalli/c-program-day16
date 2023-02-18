@@ -1,0 +1,26 @@
+//find divisible numbers of k and their even & odd sum
+#include<stdio.h>
+int main()
+{  
+  int n,i,k,evesum=0,oddsum=0;
+  printf("enter n value:");
+  scanf("%d",&n);
+  printf("enter div number:");
+  scanf("%d",&k);
+  i=1;
+  while(i<=n)
+  { 
+     if((i%k)==0)
+     {
+       printf("%d\n",i);
+       if((i%2)==0)
+  	    evesum+=i;      
+        else
+  	     oddsum+=i; 
+    }
+     i++;
+  }
+  printf("\neven sum:%d",evesum);
+  printf("\nodd sum:%d",oddsum);
+  return 0;
+}
