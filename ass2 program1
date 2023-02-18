@@ -1,0 +1,13 @@
+// print tables
+#include<stdio.h>
+int main()
+{ 
+  int a=5,b=1,c;
+  while((b>0)&&(b<=10))
+  { 
+    c=a*b;
+    printf("\n%d*%d=%d",a,b,c);
+    b++;
+  }
+  return 0;
+}
